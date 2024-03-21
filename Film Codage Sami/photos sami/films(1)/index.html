@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programe film cinéma </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Nav -->
+    <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">LES FILMS DU JOUR</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Accueil</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#patate">Mes films</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Va chercher !" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Chercher</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Carousel -->
+      <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/peneliretr.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Top Gun</h5>
+              <p>Bienvenue dans top gun</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/image.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Avatar</h5>
+              <p>Bienevnue a Pandora</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/teryt.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Babylon</h5>
+              <p>Bienvenue a Babylon</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!--
+      <div class="container" id="films">
+        <div class="row">
+            
+            <div class="list-movies"></div>
+        </div>
+      </div>
+
+      -->
+
+      <div class="container py-5" id="patate">
+        <div class="row pt-4">
+
+          <!-- Première card -->
+          <div class="col-lg-3 card">
+            <img src="img/francais.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Un coup de dés</h5>
+              <p class="card-text"> Amis de très longue date, deux hommes voient leur relation se détériorer quand l'un d'eux découvre que l'autre entretient une liaison extraconjugale.</p>
+              <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#mission">
+                Voir la bande-annonce
+              </button>
+            </div>
+          </div>
+
+          <!-- Modal MI:6 -->
+          <div class="modal fade" id="mission" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">MI:6 FALLOUT (2018)</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <iframe width="100%" height="300" src="https://www.youtube.com/embed/yZEYUyJSfEU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- Seconde card -->
+          <div class="col-lg-3 card">
+            <img src="img/arabe de arabie.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Maison de retraite 2</h5>
+              <p class="card-text">Parties passer l'été en bord de mer, les pensionnaires d'une maison de retraite voient vite ces "vacances" se transformer en un véritable cauchemar.</p>
+              <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#totoro">
+                Voir la bande-annonce 
+              </button>
+            </div>
+          </div>
+
+          <!-- Modal Totoro -->
+          <div class="modal fade" id="totoro" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Mon Voisin Totoro (1988)</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <iframe width="100%" height="300" src="https://www.youtube.com/embed/bQPeA_ekBpc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Troisième card -->
+          <div class="col-lg-3 card">
+            <img src="img/Arabe.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Pauvres creatures</h5>
+              <p class="card-text">L'histoire modernisée d'un Frankenstein au féminin. On y suit le périple d'une femme ramenée à la vie par un savant, qui a remplacé son cerveau par celui d'un foetus.</p>
+              <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#shaun">
+                Voir la bande-annonce 
+              </button>
+
+            </div>
+          </div>
+
+           <!-- Modal Shaun -->
+           <div class="modal fade" id="shaun" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Shaun Of The Dead (2004)</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <iframe width="100%" height="300" src="https://www.youtube.com/embed/5I6M_C9XUE0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Quatrième card -->
+          <div class="col-lg-3 card">
+            <img src="img/3575019.webp" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">COCORICO</h5>
+              <p class="card-text">A l'aube du mariage, un couple voit la bonne tenue de la cérémonie menacée par une brouille qui provoque de vives tensions entre leurs deux familles.</p>
+              <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#open">
+                Voir la bande-annonce 
+              </button>      
+            </div>
+          </div>
+
+           <!-- Modal Open Range -->
+           <div class="modal fade" id="open" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Open Range (1996)</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <iframe width="100%" height="300" src="https://www.youtube.com/embed/UU-GaziEhCA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        <!-- Fin de row -->  
+        </div>
+
+        <!-- row #2 -->
+        <div class="row pt-4">
+
+          <!-- Première card -->
+          <div class="col-lg-3 card">
+            <img src="img/1028805.jpg-c_310_420_x-f_jpg-q_x-xxyxx.jpg" class="card-img-top" alt="Predator">
+            <div class="card-body">
+              <h5 class="card-title">Le dernier jaguar</h5>
+              <p class="card-text">Huit ans après son départ, une adolescente retourne dans la forêt amazonienne pour porter secours à un jaguar qui fut jadis son meilleur compagnon. </p>
+              <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#predator">
+                Voir la bande-annonce
+              </button>
+            </div>
+          </div>
+
+
+          <!-- Modal Predator -->
+          <div class="modal fade" id="predator" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">PREDATOR (1987)</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <iframe width="100%" height="300" src="https://www.youtube.com/embed/Vo3FmkleTEQ?si=z2_2JcxFBRFp9s_B" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <!--seconde card -->
+          <div class="col-lg-3 card">
+            <img src="img/5834555.jpg-c_310_420_x-f_jpg-q_x-xxyxx.jpg" class="card-img-top" alt="Predator">
+            <div class="card-body">
+              <h5 class="card-title">Argylle</h5>
+              <p class="card-text">Spécialisée dans les romans d'espionnage, une jeune écrivaine se retrouve soudain en danger en raison d'intrigues gênantes évoquées dans ses livres.</p>
+              <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#evades">
+                Voir la bande-annonce
+              </button>
+            </div>
+          </div>
+
+
+          <!-- Modal Evadés -->
+          <div class="modal fade" id="evades" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">LES ÉVADÉS (1994)</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <iframe width="100%" height="300" src="https://www.youtube.com/embed/PLl99DlL6b4?si=XwAYuUU8VHL_k0AV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--troisieme card -->
+          <div class="col-lg-3 card">
+            <img src="img/2323716.jpg-c_310_420_x-f_jpg-q_x-xxyxx.jpg" class="card-img-top" alt="Predator">
+            <div class="card-body">
+              <h5 class="card-title">Chasse gardée</h5>
+              <p class="card-text">Tout juste installé dans sa nouvelle maison située à la campagne, un couple découvre que les voisins utilisent leur jardin comme terrain de chasse.</p>
+              <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#pont">
+                Voir la bande-annonce
+              </button>
+            </div>
+          </div>
+
+
+          <!-- Modal Evadés -->
+          <div class="modal fade" id="pont" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">DIE BRÜCKE (1959)</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <iframe width="100%" height="300" src="https://www.youtube.com/embed/uecjvBaF_Oo?si=KyHNYvVx2Nj4J8uJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--quatrieme card -->
+          <div class="col-lg-3 card">
+            <img src="img/0517030.webp" class="card-img-top" alt="Predator">
+            <div class="card-body">
+              <h5 class="card-title">Comme un prince </h5>
+              <p class="card-text">Condamné à effectuer des travaux d'intérêt général au château de Chambord, un jeune boxeur finit vite par s'intéresser à ce lieu rempli d'histoire.</p>
+              <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#excalibur">
+                Voir la bande-annonce
+              </button>
+            </div>
+          </div>
+
+
+          <!-- Modal Excalibur -->
+          <div class="modal fade" id="excalibur" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">EXCALIBUR (1981)</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <iframe width="100%" height="300" src="https://www.youtube.com/embed/6QR6_17mn5s?si=4WzeBYGjzfwmPtXl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- Fin row #2 -->
+        </div>
+      <!-- Fin du container -->  
+      </div>
+
+      <footer>
+        <div class="container py-5">
+          <div class="row">
+            <div class="col-lg-6 offset-lg-6 col-sm-12 p-4 d-flex flex-column justify-content-center align-items-start">
+              <blockquote>“Le ciéma est fait pour tous ceux dont la curiosité est le plus grand défaut” Claude Lelouch</blockquote>
+              <p>Les Films du Jour<br>
+                © 2023</p>
+            </div>
+
+          </div>
+        </div>
+      </footer>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+</body>
+</html>
